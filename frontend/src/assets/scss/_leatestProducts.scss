@@ -1,0 +1,41 @@
+.leatestProducts {
+  h2 {
+    text-align: center;
+  }
+  .tabtTitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    width: 600px;
+    margin: 0 auto;
+    .tabItems {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #151875;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      font-family: $font-1;
+      &.active {
+        border-bottom: 2px solid #fb4997;
+        color: #fb4997;
+      }
+    }
+  }
+  .productLists {
+    width: 100%;
+    padding: 20px 0;
+    display: none;
+    .productCard {
+      min-width: 250px;
+      max-width: 250px;
+      margin-right: 16px;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 4%);
+    }
+    &.active {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

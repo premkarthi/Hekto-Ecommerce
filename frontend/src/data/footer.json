@@ -1,0 +1,108 @@
+{
+    "footerTitle": "Hekto",
+    "footerAddress": "17 Princess Road, London, Greater London NW1 8JR, UK",
+    "socialicon": [
+        {
+          "icon": "fa fa-facebook",
+          "url": "#"
+        },
+        {
+          "icon": "fa fa-linkedin",
+          "url": "#"
+        },
+        {
+            "icon": "fa fa-twitter",
+            "url": "#"
+          }
+      ],
+    "copyrighttext": " © Webecy - All Rights Reserved",
+    "footerLinks" : [
+        {
+            "categories": {
+                "title": "Categories",
+                "links": [
+                  {
+                    "title": "Laptops & Computers",
+                    "url": "/"
+                  },
+                  {
+                    "title": "Cameras & Photography",
+                    "url": "/"
+                  },
+                  {
+                      "title": "Smart Phones & Tablets",
+                      "url" : "/"
+                  },
+                  {
+                      "title": "Video Games & Consoles",
+                      "url" : "/"
+                  },
+                  {
+                      "title": "Waterproof Headphones",
+                      "url" : "/"
+                  }
+                ]
+              }
+        },
+        {
+            "CustomerCare": {
+                "title": "Customer Care",
+                "links": [
+                  {
+                    "title": "My Account",
+                     "url": "/"
+                  },
+                  {
+                    "title": "Discount",
+                     "url": "/"
+                  },
+                  {
+                    "title": "Returns",
+                     "url": "/"
+                  },
+                  {
+                    "title": "Orders History",
+                     "url": "/"
+                  },
+                  {
+                    "title": "Order Tracking",
+                    "url": "/"
+                  }
+                ]
+              }
+
+        },
+        {
+            "pages": {
+                "title": "Pages",
+                "links": [
+                  {
+                    "title": "Blog",
+                    "url": "/"
+                  },
+                  {
+                    "title": "Browse the Shop",
+                    "url": "/"
+                  },
+                  {
+                      "title": "Category",
+                      "url": "/"
+                  },
+                  {
+                      "title": "Pre-Built Pages",
+                      "url": "/"
+                  },
+                  {
+                      "title": "Visual Composer Elements",
+                      "url": "/"
+                  },
+                  {
+                      "title": "WooCommerce Pages",
+                      "url": "/"
+                  }
+                ]
+              }
+        }
+    ]
+  
+  }

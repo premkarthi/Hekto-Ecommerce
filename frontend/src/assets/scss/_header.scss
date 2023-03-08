@@ -1,0 +1,185 @@
+header{
+    width: 100%;
+    .topNav {
+        background: $violet;
+        padding: 10px 0px;
+     
+        .container{
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 768px){
+                flex-wrap: nowrap ;
+            }
+            .headerLeft{
+                display: flex;
+             
+                p{
+                    margin-right: 50px;
+                    color: #ffffff;
+                    white-space: nowrap;
+                    @media screen and (max-width: 768px){
+                        margin-right: 10px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    svg{
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+                    span{
+                        color: #ffffff;
+                        @media screen and (max-width: 768px){
+                            display: none;
+                        }
+                    }
+                }
+    
+            }
+            .headerRight{
+                display: flex;
+                @media screen and (max-width: 768px){
+                    justify-content: space-between;
+                }
+                li{
+                    margin-right: 20px;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    a{
+                        color: #ffffff;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        svg{
+                            margin-left: 5px;
+                            font-size: 12px;
+                            vertical-align: middle;
+                        }
+                        span{
+                        color: #ffffff;
+                        @media screen and (max-width: 768px){
+                            display: none;
+                        }
+                        }
+                    }
+                   
+                }
+            }
+        }
+       
+    }
+    .mainNav{
+        padding: 10px 0px;
+        @media screen and (max-width: 990px){
+            padding: 13px 0px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo h1{  
+                font-size: 2.1rem;
+                font-weight: 700;
+            }
+            .mobileHeader{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-basis: 75%;
+                @media screen and (max-width: 990px){
+                    position: absolute;
+                    top: 100px;
+                    background: #ffffff;
+                    left: 0px;
+                    display: block;
+                    width: 100%;
+                    z-index: 11;
+                    padding: 20px;
+                    display: none ;
+                }
+                &.active{
+                    display: block;
+                }
+                .headerLinks{
+                    display: flex;
+                    @media screen and (max-width: 990px){
+                        display: block;        
+                    }
+                    
+                    li{
+                        margin-right: 20px;
+                        position: relative;
+                        cursor: pointer;
+                        a{
+                            padding: 10px 0px;
+                            white-space: nowrap;
+                            @media screen and (max-width: 990px){
+                                display: block;
+                            }
+                            &:hover{
+                                color: $pink;
+                                svg{
+                                    transform: rotate(180deg);
+                                }
+                            }
+                            &.active{
+                                color: $pink;
+                            }
+                            svg{
+                                margin-left: 2px;
+                                font-size: 12px;
+                                transition: 0.2s;
+                                vertical-align: middle;
+                            }
+                        }
+                       
+                        .dropdown{
+                            background: $backgroundLight;
+                            min-width: 150px;
+                            position: absolute;
+                            top: 41px;
+                            left: 0px;
+                            transform: translateX(-100px);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.2s;
+                            li{
+                                border-bottom: 1px solid #e7e7e7;
+                                padding: 5px 10px;
+                                cursor: pointer;
+                                width: 100%;
+                                transition: 0.2s;
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+                                &:hover{
+                                    background: $pink;
+                                    color: #ffffff;
+                                }
+                            }
+                            &.active{
+                                transform: translateX(0px);
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+                .headerSearch{
+                    
+                }   
+            }
+
+            .toggleBar{
+                display: none;
+                font-size: 20px;
+                cursor: pointer;
+                @media screen and (max-width: 990px){
+                    display: block;
+                    
+                }
+            }
+           
+        }
+    }
+}
