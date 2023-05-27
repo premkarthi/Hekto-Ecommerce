@@ -46,7 +46,7 @@ router.post('/api/products', upload.array('images', 12), async (req, res) => {
         description: req.body.description,
         price: req.body.price,
         images: req.files.map(file => file.filename),
-        category: req.body.category
+        category: req.body.category2
     });
     try {
         await product.save();
